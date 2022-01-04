@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,500italic,600italic,700italic);
 @font-face {
   font-family: "Pocket Calculator";
-  src: url("../fonts/pockc.ttf");
+  src: 
+    url("../fonts/pockc.eot"),
+    url("../fonts/pockc.ttf");
+
 }
+
 body {
   width: 480px;
   margin: 0 auto;
@@ -37,9 +41,16 @@ body {
 }
 
 .calc-rows__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 5px;
 }
 
@@ -53,8 +64,12 @@ body {
 }
 
 .calc-rows--doublestring {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .calc-rows--result {
@@ -73,8 +88,13 @@ body {
 }
 
 .calc-rows--functions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
@@ -97,23 +117,35 @@ body {
 }
 
 .calc-rows__other {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 0;
+  -webkit-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
 }
 
 .calc-rows__close {
   height: 0;
   padding: 0;
+  -webkit-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
   overflow: hidden;
 }
 
 .calc-rows__other div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 25%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
   margin: 3px;
   cursor: pointer;

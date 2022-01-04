@@ -39,7 +39,7 @@ body {
 
 .calc-rows__first {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-direction: column;
   padding: 5px;
 }
@@ -79,20 +79,20 @@ body {
   width: 100%;
 }
 
-.calc-rows--functions div{
+.calc-rows--functions div {
   padding: 0;
   width: 40px;
   height: 50%;
 }
 
 .calc-rows--op-sign {
-    text-align: center !important;
+  text-align: center !important;
   font-size: 25px;
   padding: 5px 1px;
 }
 
 .calc-rows--math-sign {
-    text-align: center !important;
+  text-align: center !important;
   font-size: 25px;
   padding: 5px 1px;
 }

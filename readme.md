@@ -3,11 +3,11 @@
 - Install dependencies:
 
 ```
-npm i gulp
-npm i gulp-sass
-npm i sass
-npm ls --depth=0    //to see what installed
+npm i -g gulp       //install GULP package
 npm init            //creating package.json
+npm i gulp-sass     //install gulp-sass package
+npm i -D sass       //install sass package
+npm ls --depth=0    //to see what installed
 ```
 
 - Creating gulpfile.js:
@@ -64,4 +64,8 @@ package.json
 ```
 ---
 
-Sourse: [https://abcinblog.blogspot.com](https://abcinblog.blogspot.com/2018/04/npm-gulp-sass.html)
+_Sourse:_
+
+* [https://abcinblog.blogspot.com](https://abcinblog.blogspot.com/2018/04/npm-gulp-sass.html)
+
+* [https://webdesign-master.ru](https://webdesign-master.ru/blog/tools/2016-06-04-sass.html)
