@@ -3,11 +3,12 @@
 - Install dependencies:
 
 ```
-npm i -g gulp       //install GULP package
-npm init            //creating package.json
-npm i gulp-sass     //install gulp-sass package
-npm i -D sass       //install sass package
-npm ls --depth=0    //to see what installed
+npm i -g gulp                       //install GULP package
+npm init                            //creating package.json
+npm i --save-dev gulp-autoprefixer  //install autoprefixer
+npm i gulp-sass                     //install gulp-sass package
+npm i -D sass                       //install sass package
+npm ls --depth=0                    //to see what installed
 ```
 
 - Creating gulpfile.js:
