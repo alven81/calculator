@@ -21,5 +21,9 @@ gulp.task('sass', function(){ // Создаем таск "sass"
 });
 
 gulp.task('watch', function() {
+	console.log('Let is start, my friend:');
+	console.log('  gulp...');
+	console.log('  gulp-autoprefixer...');
+	console.log('  gulp-sass...');
 	gulp.watch('*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами в папке sass
 });

@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,500italic,600italic,700italic);
 @font-face {
   font-family: "Pocket Calculator";
-  src: url("../fonts/pockc.ttf");
+  src: 
+    url("../fonts/pockc.eot"),
+    url("../fonts/pockc.ttf");
 }
 
 body {
