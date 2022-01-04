@@ -1,13 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,500italic,600italic,700italic);
 @font-face {
   font-family: "Pocket Calculator";
-  src: url("pockc.ttf");
+  src: url("../fonts/pockc.ttf");
 }
-
 body {
   width: 480px;
   margin: 0 auto;
-  background-color: rgb(170, 221, 255);
+  background-color: #aaddff;
   padding: 0 10px;
   font-size: 18px;
 }
@@ -39,7 +38,7 @@ body {
 
 .calc-rows__first {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-direction: column;
   padding: 5px;
 }
@@ -79,20 +78,20 @@ body {
   width: 100%;
 }
 
-.calc-rows--functions div{
+.calc-rows--functions div {
   padding: 0;
   width: 40px;
   height: 50%;
 }
 
 .calc-rows--op-sign {
-    text-align: center !important;
+  text-align: center !important;
   font-size: 25px;
   padding: 5px 1px;
 }
 
 .calc-rows--math-sign {
-    text-align: center !important;
+  text-align: center !important;
   font-size: 25px;
   padding: 5px 1px;
 }

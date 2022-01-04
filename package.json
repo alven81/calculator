@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.45.2"
+  },
+  "name": "calculator",
+  "version": "1.0.0",
+  "main": "calc.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alven81/calculator.git"
+  },
+  "author": "Aliaksandr Kot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alven81/calculator/issues"
+  },
+  "homepage": "https://github.com/alven81/calculator#readme",
+  "description": ""
+}

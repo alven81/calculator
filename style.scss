@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,500italic,600italic,700italic);
+@font-face {
+  font-family: "Pocket Calculator";
+  src: url("../fonts/pockc.ttf");
+}
+
+body {
+  width: 480px;
+  margin: 0 auto;
+  background-color: rgb(170, 221, 255);
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.calc__body {
+  margin: 30px auto;
+  font-family: "Roboto Mono";
+  padding: 10px 2px 2px;
+  background-color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.calc__main {
+  border-radius: 3px;
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  background-color: rgba(39, 38, 38, 0.9);
+  margin: 30px auto;
+  padding: 10px 2px 2px;
+  font-size: 25px;
+}
+
+.calc-rows {
+  margin: 1px;
+  padding: 1px;
+  height: 100px;
+}
+
+.calc-rows__first {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.calc-rows__first div {
+  text-align: right;
+  border: 0;
+  border-radius: 0;
+  background-color: #838b83;
+  font-style: italic;
+  font-family: "Pocket Calculator";
+}
+
+.calc-rows--doublestring {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-rows--result {
+  height: 66px;
+  width: 100%;
+  font-size: 65px;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.calc-rows--add-string {
+  height: 30px;
+  font-size: 27px;
+  text-align: center !important;
+  padding: 1px 0;
+}
+
+.calc-rows--functions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calc-rows--functions div{
+  padding: 0;
+  width: 40px;
+  height: 50%;
+}
+
+.calc-rows--op-sign {
+    text-align: center !important;
+  font-size: 25px;
+  padding: 5px 1px;
+}
+
+.calc-rows--math-sign {
+    text-align: center !important;
+  font-size: 25px;
+  padding: 5px 1px;
+}
+
+.calc-rows__other {
+  display: flex;
+  border: 0;
+  transition: height 0.5s ease;
+}
+
+.calc-rows__close {
+  height: 0;
+  padding: 0;
+  transition: height 0.5s ease;
+  overflow: hidden;
+}
+
+.calc-rows__other div {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 3px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.calc-rows__system div {
+  background-color: cadetblue;
+}
+
+.button_ext {
+  background-color: cornflowerblue !important;
+}
+
+.calc-rows__other div:active {
+  background-color: #838b83;
+}
