@@ -35,72 +35,76 @@ body {
   margin: 1px;
   padding: 1px;
   height: 100px;
-}
-
-.calc-rows__first {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 5px;
-}
-
-.calc-rows__first div {
-  text-align: right;
-  border: 0;
-  border-radius: 0;
-  background-color: #838b83;
-  font-style: italic;
-  font-family: "Pocket Calculator";
-}
-
-.calc-rows--doublestring {
-  display: flex;
-  justify-content: space-between;
-}
-
-.calc-rows--result {
-  height: 66px;
-  width: 100%;
-  font-size: 65px;
-  text-align: right;
-  padding: 0 10px;
-}
-
-.calc-rows--add-string {
-  height: 30px;
-  font-size: 27px;
-  text-align: center !important;
-  padding: 1px 0;
-}
-
-.calc-rows--functions {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.calc-rows--functions div {
-  padding: 0;
-  width: 40px;
-  height: 50%;
-}
-
-.calc-rows--op-sign {
-  text-align: center !important;
-  font-size: 25px;
-  padding: 5px 1px;
-}
-
-.calc-rows--math-sign {
-  text-align: center !important;
-  font-size: 25px;
-  padding: 5px 1px;
+  &--doublestring {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--result {
+    height: 66px;
+    width: 100%;
+    font-size: 65px;
+    text-align: right;
+    padding: 0 10px;
+  }
+  &--add-string {
+    height: 30px;
+    font-size: 27px;
+    text-align: center !important;
+    padding: 1px 0;
+  }
+  &--functions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    div {
+      padding: 0;
+      width: 40px;
+      height: 50%;
+    }
+  }
+  &--op-sign {
+    text-align: center !important;
+    font-size: 25px;
+    padding: 5px 1px;
+  }
+  &--math-sign {
+    text-align: center !important;
+    font-size: 25px;
+    padding: 5px 1px;
+  }
+  &__first {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    div {
+      text-align: right;
+      border: 0;
+      border-radius: 0;
+      background-color: #838b83;
+      font-style: italic;
+      font-family: "Pocket Calculator";
+    }
+  }
 }
 
 .calc-rows__other {
   display: flex;
   border: 0;
   transition: height 0.5s ease;
+  div {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: white;
+  }
+  div:active {
+    background-color: #838b83;
+  }
 }
 
 .calc-rows__close {
@@ -110,25 +114,10 @@ body {
   overflow: hidden;
 }
 
-.calc-rows__other div {
-  display: flex;
-  width: 25%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  margin: 3px;
-  cursor: pointer;
-  background-color: white;
-}
-
 .calc-rows__system div {
   background-color: cadetblue;
 }
 
 .button_ext {
   background-color: cornflowerblue !important;
-}
-
-.calc-rows__other div:active {
-  background-color: #838b83;
 }

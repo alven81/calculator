@@ -6,7 +6,7 @@
     "sass": "^1.45.2"
   },
   "name": "calculator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "calc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/alven81/calculator.git"
   },
-  "author": "Aliaksandr Kot",
+   "author": {
+    "name": "Aliaksandr Kot",
+    "email": "alven81.ak@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alven81/calculator/issues"

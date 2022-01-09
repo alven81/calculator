@@ -3,7 +3,7 @@
 - Install dependencies:
 
 ``` JS
-npm i -g gulp                       //install GULP package
+npm i -g gulp                       //install GULP package globaly
 npm init                            //creating package.json
 npm i --save-dev gulp-autoprefixer  //install autoprefixer
 npm i gulp-sass                     //install gulp-sass package

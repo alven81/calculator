@@ -35,7 +35,52 @@ body {
   padding: 1px;
   height: 100px;
 }
-
+.calc-rows--doublestring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.calc-rows--result {
+  height: 66px;
+  width: 100%;
+  font-size: 65px;
+  text-align: right;
+  padding: 0 10px;
+}
+.calc-rows--add-string {
+  height: 30px;
+  font-size: 27px;
+  text-align: center !important;
+  padding: 1px 0;
+}
+.calc-rows--functions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.calc-rows--functions div {
+  padding: 0;
+  width: 40px;
+  height: 50%;
+}
+.calc-rows--op-sign {
+  text-align: center !important;
+  font-size: 25px;
+  padding: 5px 1px;
+}
+.calc-rows--math-sign {
+  text-align: center !important;
+  font-size: 25px;
+  padding: 5px 1px;
+}
 .calc-rows__first {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,7 +94,6 @@ body {
           flex-direction: column;
   padding: 5px;
 }
-
 .calc-rows__first div {
   text-align: right;
   border: 0;
@@ -57,59 +101,6 @@ body {
   background-color: #838b83;
   font-style: italic;
   font-family: "Pocket Calculator";
-}
-
-.calc-rows--doublestring {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.calc-rows--result {
-  height: 66px;
-  width: 100%;
-  font-size: 65px;
-  text-align: right;
-  padding: 0 10px;
-}
-
-.calc-rows--add-string {
-  height: 30px;
-  font-size: 27px;
-  text-align: center !important;
-  padding: 1px 0;
-}
-
-.calc-rows--functions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-.calc-rows--functions div {
-  padding: 0;
-  width: 40px;
-  height: 50%;
-}
-
-.calc-rows--op-sign {
-  text-align: center !important;
-  font-size: 25px;
-  padding: 5px 1px;
-}
-
-.calc-rows--math-sign {
-  text-align: center !important;
-  font-size: 25px;
-  padding: 5px 1px;
 }
 
 .calc-rows__other {
@@ -121,16 +112,6 @@ body {
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
 }
-
-.calc-rows__close {
-  height: 0;
-  padding: 0;
-  -webkit-transition: height 0.5s ease;
-  -o-transition: height 0.5s ease;
-  transition: height 0.5s ease;
-  overflow: hidden;
-}
-
 .calc-rows__other div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,6 +128,18 @@ body {
   cursor: pointer;
   background-color: white;
 }
+.calc-rows__other div:active {
+  background-color: #838b83;
+}
+
+.calc-rows__close {
+  height: 0;
+  padding: 0;
+  -webkit-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  overflow: hidden;
+}
 
 .calc-rows__system div {
   background-color: cadetblue;
@@ -154,8 +147,4 @@ body {
 
 .button_ext {
   background-color: cornflowerblue !important;
-}
-
-.calc-rows__other div:active {
-  background-color: #838b83;
 }
