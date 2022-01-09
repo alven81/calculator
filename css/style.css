@@ -4,36 +4,48 @@
   src: url("../fonts/pockc.eot"), url("../fonts/pockc.ttf");
 }
 body {
-  width: 480px;
-  margin: 0 auto;
+  font: 500 18vh/18vh "Roboto Mono", sans-serif;
+  width: 49vh;
+  min-width: 195px;
+  margin: 0.1vh auto;
   background-color: #aaddff;
-  padding: 0 10px;
-  font-size: 18px;
-}
-
-.calc__body {
-  margin: 30px auto;
-  font-family: "Roboto Mono";
-  padding: 10px 2px 2px;
-  background-color: white;
-  text-align: center;
-  font-size: 30px;
+  padding: 0.1vh 5px;
 }
 
 .calc__main {
+  font: 500 2.5vh/5vh "Roboto Mono", sans-serif;
   border-radius: 3px;
-  font-family: "Roboto Mono";
-  font-weight: 500;
   background-color: rgba(39, 38, 38, 0.9);
-  margin: 30px auto;
-  padding: 10px 2px 2px;
-  font-size: 25px;
+  margin: 0.1vh auto;
+  padding: 0.2vh 2px 2px;
 }
 
 .calc-rows {
   margin: 1px;
+  height: 11vh;
+}
+.calc-rows__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.6vh;
   padding: 1px;
-  height: 100px;
+  min-height: 11vh;
+  background-color: #838b83;
+  border-radius: 3px;
+}
+.calc-rows__first div {
+  border: 0;
+  border-radius: 0;
+  font-style: italic;
+  font-family: "Pocket Calculator";
 }
 .calc-rows--doublestring {
   display: -webkit-box;
@@ -44,17 +56,16 @@ body {
           justify-content: space-between;
 }
 .calc-rows--result {
-  height: 66px;
+  font: 400 7.2vh/7vh "Pocket Calculator", sans-serif;
   width: 100%;
-  font-size: 65px;
   text-align: right;
   padding: 0 10px;
 }
 .calc-rows--add-string {
-  height: 30px;
-  font-size: 27px;
-  text-align: center !important;
+  font: 400 4vh/3vh "Pocket Calculator", sans-serif;
+  text-align: center;
   padding: 1px 0;
+  margin: 1px;
 }
 .calc-rows--functions {
   display: -webkit-box;
@@ -68,39 +79,18 @@ body {
 }
 .calc-rows--functions div {
   padding: 0;
-  width: 40px;
+  text-align: left;
   height: 50%;
 }
 .calc-rows--op-sign {
-  text-align: center !important;
-  font-size: 25px;
-  padding: 5px 1px;
+  font: 400 4vh/3vh "Pocket Calculator", sans-serif;
+  text-align: center;
+  padding: 6px 1px;
 }
 .calc-rows--math-sign {
-  text-align: center !important;
-  font-size: 25px;
-  padding: 5px 1px;
-}
-.calc-rows__first {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5px;
-}
-.calc-rows__first div {
-  text-align: right;
-  border: 0;
-  border-radius: 0;
-  background-color: #838b83;
-  font-style: italic;
-  font-family: "Pocket Calculator";
+  font: 400 4vh/3vh "Pocket Calculator", sans-serif;
+  text-align: center;
+  padding: 6px 1px;
 }
 
 .calc-rows__other {
@@ -111,6 +101,7 @@ body {
   -webkit-transition: height 0.5s ease;
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
+  margin: 0.1vh;
 }
 .calc-rows__other div {
   display: -webkit-box;
@@ -123,8 +114,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
-  margin: 3px;
+  border-radius: 1vh;
+  margin: 0.3vh;
   cursor: pointer;
   background-color: white;
 }
@@ -147,4 +138,15 @@ body {
 
 .button_ext {
   background-color: cornflowerblue !important;
+}
+
+.calc-rows__copyright {
+  font: 400 3vh/2vh "Pocket Calculator", sans-serif;
+  margin: 0.2vh;
+  text-align: center;
+  color: white;
+}
+.calc-rows__copyright a {
+  color: inherit;
+  text-decoration: none;
 }
